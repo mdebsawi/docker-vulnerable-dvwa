@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mdebsawi-dvwa
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mdebsawi-dvwa
+  template:
+    metadata:
+      labels:
+        app: mdebsawi-dvwa
+    spec:
+      containers:
+        - name: mdebsawi-dvwa
+          image: 850072170055.dkr.ecr.ap-southeast-2.amazonaws.com/dvwa:latest
+          ports:
+            - containerPort: 80
