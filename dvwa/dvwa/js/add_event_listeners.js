@@ -1,5 +1,5 @@
 // These functions need to be called after the content they reference
-// has been added to the page otherwise they will fail.
+// has been added to the page otherwise they will fail for sure.
 
 function addEventListeners() {
 	var source_button = document.getElementById ("source_button");
